@@ -17,7 +17,8 @@ import Product from './views/Shop/Product.vue'
 
 Vue.use(VueMq, {
   breakpoints: {
-    small: 450,
+    small: 550,
+    mediumSmall: 900,
     medium: 1250,
     large: Infinity,
   }

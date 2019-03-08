@@ -1,11 +1,10 @@
 <template>
   <div>
-    <div class="shop-wrapper">
+    <div class="shop-wrapper" :class="$mq">
       <div class="sidebars">
-        <CategorySidebar/>
-        <FilterSidebar/>
+        <ShopSidebars/>
       </div>
-      <div class="product-wrapper">
+      <div class="product-wrapper" :class="$mq">
         <ProductCard/>
         <ProductCard/>
         <ProductCard/>
@@ -14,38 +13,65 @@
         <ProductCard/>
         <ProductCard/>
         <ProductCard/>
-        
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import CategorySidebar from '../../components/Sidebars/SubCategories.vue'
-import FilterSidebar from '../../components/Sidebars/Filters.vue'
-import ProductCard from '../../components/ProductCard.vue'
+import ShopSidebars from '../../components/Sidebars/ShopSidebars.vue';
+import ProductCard from "../../components/ProductCard.vue";
 export default {
-  components:{
-    CategorySidebar,
-    FilterSidebar,
-    ProductCard
+  components: {
+    ProductCard,
+    ShopSidebars
   }
 };
 </script>
 
 <style>
-.shop-wrapper {
-  margin-top: 1em;
-  display: grid;
-  grid-template-columns: 250px auto;
+.shop-wrapper  {
+    margin-top: 1em;
+    display: grid;
+    
+}
+
+.shop-wrapper.large {
+  grid-template-columns: fit-content(250px) auto;
+}
+.shop-wrapper.medium {
+  grid-template-columns: fit-content(250px) auto;
+}
+
+.sidebars {
+  grid-column: 1;
 }
 
 .product-wrapper {
   display: grid;
   margin-left: 1em;
-  grid-template-columns: 1fr 1fr 1fr;
+  /*grid-template-columns: 1fr 1fr 1fr;*/
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-row-gap: 1em;
   grid-column-gap: 1em;
+}
+
+.product-wrapper.large {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.product-wrapper.medium {
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-right: 1em;
+}
+
+.product-wrapper.mediumSmall {
+  grid-template-columns: 1fr 1fr;
+  margin-right: 1em;
+}
+
+.product-wrapper.small {
+  grid-template-columns: 1fr;
+  margin-right: 1em;
 }
 </style>

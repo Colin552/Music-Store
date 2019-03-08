@@ -65,7 +65,7 @@ export default {
 <style scoped>
 .filter-sidebar {
   padding-top: 1em;
-  width: 250px;
+
 }
 
 .price-slider {
@@ -78,8 +78,10 @@ export default {
 
 .slider-text-right {
   margin-left: 5px;
+
 }
 .slider-text-left {
   margin-right: 5px;
+
 }
 </style>

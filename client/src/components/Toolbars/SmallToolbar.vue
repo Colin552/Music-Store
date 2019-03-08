@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-toolbar color="#64afff" dark>
+    <v-toolbar color="#64afff" dark flat>
       <div class="toolbar-side-icon">
         <v-toolbar-side-icon @click.stop="changeDrawerState"></v-toolbar-side-icon>
       </div>

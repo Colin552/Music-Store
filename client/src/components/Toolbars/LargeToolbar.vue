@@ -43,29 +43,29 @@
                 <v-icon>keyboard_arrow_down</v-icon>
               </v-btn>
               <v-list>
-                <router-link class="nav-link" to="/electric-guitars">
-                  <v-list-tile class="nav-tile">
+
+                  <v-list-tile class="nav-tile" to="/electric-guitars">
                     <v-list-tile-title>Electric Guitars</v-list-tile-title>
                   </v-list-tile>
-                </router-link>
+
                 <v-divider></v-divider>
-                <router-link class="nav-link" to="/acoustic-guitars">
-                  <v-list-tile class="nav-tile">
+
+                  <v-list-tile class="nav-tile" to="/acoustic-guitars">
                     <v-list-tile-title>Acoustic Guitars</v-list-tile-title>
                   </v-list-tile>
-                </router-link>
+
                 <v-divider></v-divider>
-                <router-link class="nav-link" to="/amplifiers">
-                  <v-list-tile class="nav-tile">
+
+                  <v-list-tile class="nav-tile" to="/amplifiers">
                     <v-list-tile-title>Amplifiers</v-list-tile-title>
                   </v-list-tile>
-                </router-link>
+
                 <v-divider></v-divider>
-                <router-link class="nav-link" to="/tools">
-                  <v-list-tile class="nav-tile">
+
+                  <v-list-tile class="nav-tile" to="/tools">
                     <v-list-tile-title>Tools and Parts</v-list-tile-title>
                   </v-list-tile>
-                </router-link>
+
               </v-list>
             </v-menu>
 
@@ -110,6 +110,7 @@ export default {};
 
 .upper-nav-brand {
   text-align: middle;
+  margin-left: 10px;
 }
 
 .lower-nav-items {

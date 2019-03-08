@@ -1,7 +1,7 @@
 <template>
   <div>
 
-      <LargeToolbar v-if="$mq === 'large' || $mq === 'medium'"></LargeToolbar>
+      <LargeToolbar v-if="$mq !='small'"></LargeToolbar>
 
 
       <SmallToolbar v-if="$mq === 'small'"></SmallToolbar>

@@ -63,7 +63,7 @@ export default {
 }
 .category-sidebar {
   background: white;
-  width: 250px;
+
 }
 
 .sidebar-link-tile {
