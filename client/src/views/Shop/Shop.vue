@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import ShopSidebars from '../../components/Sidebars/ShopSidebars.vue';
+import ShopSidebars from "../../components/Sidebars/ShopSidebars.vue";
 import ProductCard from "../../components/ProductCard.vue";
 export default {
   components: {
@@ -30,10 +30,9 @@ export default {
 </script>
 
 <style>
-.shop-wrapper  {
-    margin-top: 1em;
-    display: grid;
-    
+.shop-wrapper {
+  margin-top: 1em;
+  display: grid;
 }
 
 .shop-wrapper.large {
