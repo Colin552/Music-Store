@@ -15,8 +15,8 @@
     </div>
     <v-card-title primary-title>
       <div>
-        <p>{{this.brand}} {{this.name}} in {{this.finish}}</p>
-        <p>${{this.price}}</p>
+        <p>{{this.product.brand.name}} {{this.product.name}} in {{this.product.finish}}</p>
+        <p>${{this.product.price.$numberDecimal}}</p>
       </div>
     </v-card-title>
   </v-card>
@@ -40,6 +40,9 @@ export default {
     finish: {
       type: String,
       default: "Natural"
+    },
+    product: {
+      type: Object
     }
   },
 

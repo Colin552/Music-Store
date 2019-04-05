@@ -40,6 +40,9 @@
 
 <script>
 export default {
+  props: {
+    category: String
+  },
   data() {
     return {
       panel: [true],

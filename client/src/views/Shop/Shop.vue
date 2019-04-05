@@ -5,27 +5,36 @@
         <ShopSidebars/>
       </div>
       <div class="product-wrapper" :class="$mq">
-        <ProductCard/>
-        <ProductCard/>
-        <ProductCard/>
-        <ProductCard/>
-        <ProductCard/>
-        <ProductCard/>
-        <ProductCard/>
-        <ProductCard/>
+        <div v-if="this.shopSelection === 'electric-guitars'">
+          <ElectricGuitars/>
+        </div>  
       </div>
     </div>
   </div>
 </template>
 
 <script>
+/* eslint-disable */
 import ShopSidebars from "../../components/Sidebars/ShopSidebars.vue";
-import ProductCard from "../../components/ProductCard.vue";
+import ElectricGuitars from "./ElectricGuitars.vue";
+
 export default {
   components: {
-    ProductCard,
-    ShopSidebars
+    ShopSidebars,
+    ElectricGuitars
+  },
+  props: {
+    shopSelection: String
+  },
+  mounted() {
+    this.test()
+  },
+  methods: {
+    test() {
+
+    }
   }
+
 };
 </script>
 

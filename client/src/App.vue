@@ -2,15 +2,20 @@
   <v-app>
     <Toolbar/>
     <NavigationDrawer/>
+    
+    <router-view name="NoGridBefore"></router-view>
+
     <div class="content-wrapper">
       <router-view class="content"></router-view>
     </div>
+
+    <router-view name="NoGridAfter"></router-view>
   </v-app>
 </template>
 
 <script>
 import Toolbar from "./components/Toolbars/Toolbar.vue";
-import NavigationDrawer from "./components/Toolbars/NavigationDrawer.vue"
+import NavigationDrawer from "./components/Toolbars/NavigationDrawer.vue";
 
 export default {
   name: "App",
@@ -20,8 +25,7 @@ export default {
   },
   data() {
     return {};
-  },
-
+  }
 };
 </script>
 

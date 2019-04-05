@@ -10,12 +10,10 @@
 
 <script>
 import LargeToolbar from './LargeToolbar.vue'
-//import MediumToolbar from './MediumToolbar.vue'
 import SmallToolbar from './SmallToolbar.vue'
 export default {
   components: {
     LargeToolbar,
-    //MediumToolbar,
     SmallToolbar
   }
 

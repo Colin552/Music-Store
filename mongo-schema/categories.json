@@ -1,0 +1,7 @@
+{"_id":{"$oid":"5c6f5904e4c825284489fbfc"},"name":"Electric Guitars","subCategories":[{"$oid":"5ca4d69c2f8560131c3c62ec"},{"$oid":"5ca4d6eb2f8560131c3c62ed"}]}
+{"_id":{"$oid":"5c6f5922e4c825284489fbfd"},"name":"Acoustic Guitars","subCategories":[{"$oid":"5ca5c6e42f8560131c3c62ef"}]}
+{"_id":{"$oid":"5c702eeae4c825284489fbff"},"name":"Amplifiers"}
+{"_id":{"$oid":"5c702f04e4c825284489fc00"},"name":"Misc"}
+{"_id":{"$oid":"5ca4d69c2f8560131c3c62ec"},"name":"6 String"}
+{"_id":{"$oid":"5ca4d6eb2f8560131c3c62ed"},"name":"7 String"}
+{"_id":{"$oid":"5ca5c6e42f8560131c3c62ef"},"name":"Steel String"}

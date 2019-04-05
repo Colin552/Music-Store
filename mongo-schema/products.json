@@ -1,0 +1,1 @@
+{"_id":{"$oid":"5c63e5ba65faf40840826eaf"},"name":"stratocaster","description":"Nice guitar","price":{"$numberDecimal":"599.99"},"category":{"$oid":"5ca4d69c2f8560131c3c62ec"},"brand":{"$oid":"5ca4cb7c2f8560131c3c62e6"}}

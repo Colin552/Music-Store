@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <v-toolbar></v-toolbar>
+  <div class="banner-wrapper">
+    
   </div>
 </template>
 
 <script>
 export default {
 
-}
+};
 </script>
 
 <style>

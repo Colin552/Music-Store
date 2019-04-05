@@ -5,8 +5,6 @@
         <v-toolbar-side-icon @click.stop="changeDrawerState"></v-toolbar-side-icon>
       </div>
 
-
-
       <v-toolbar-title>The Music Store</v-toolbar-title>
 
       <v-spacer></v-spacer>
