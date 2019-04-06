@@ -16,7 +16,7 @@
     <v-card-title primary-title>
       <div>
         <p>{{this.product.brand.name}} {{this.product.name}} in {{this.product.finish}}</p>
-        <p>${{this.product.price.$numberDecimal}}</p>
+        <p>${{this.product.regularPrice}}</p>
       </div>
     </v-card-title>
   </v-card>
@@ -25,22 +25,6 @@
 <script>
 export default {
   props: {
-    name: {
-      type: String,
-      default: "Stratocaster"
-    },
-    brand: {
-      type: String,
-      default: "Fender"
-    },
-    price: {
-      type: Number,
-      default: 1499.99
-    },
-    finish: {
-      type: String,
-      default: "Natural"
-    },
     product: {
       type: Object
     }
