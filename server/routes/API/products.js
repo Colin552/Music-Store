@@ -9,7 +9,7 @@ router.get('/', function (req, res, next) {
 
   Product.find({})
   .populate('brand')
-  .populate('category')
+  .populate('categories')
   .exec(function(err, products){
     res.send(products)
   })
@@ -18,8 +18,15 @@ router.get('/', function (req, res, next) {
 
 router.post('/',function (req, res, next) {
 
+  //Build the query to only include products with all categories
+  var query = {$and: []}
+  for (var i=0; i < req.body.category.length; i++){
+    query.$and.push({
+      categories: req.body.category[i]
+    })
+  }
 
-  Product.find({category: req.body.category})
+  Product.find(query)
   .exec(function(err, products){
     res.send(products)
   })

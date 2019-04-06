@@ -7,12 +7,14 @@ var ProductSchema = new mongoose.Schema({
   description: {type: String, required: true},
   salePrice: {type: Number, required: false},
   regularPrice: {type: Number, required: true},
-  category:
-  {
+  finish: {type: String, required: false},
+  wattage: {type: Number, required: false},
+  categories:
+  [{
     type: mongoose.Schema.Types.ObjectId,
     ref: "Category",
     required: true
-  },
+  }],
   brand: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Brand",
